@@ -1,0 +1,125 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    >
+    <Style x:Key="HyperLinkAuthorization" TargetType="Hyperlink">
+        <Setter Property="Foreground" Value="#009687"/>
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Foreground" Value="#1C7168"/>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+    <Style x:Key="BackgroundButton" TargetType="Button">
+        <Setter Property="FontFamily" Value="Arial"/>
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="FontWeight" Value="Bold"/>
+        <Setter Property="Background" Value="#009687"/>
+        <Setter Property="Foreground" Value="#EDF6FD"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border CornerRadius="1" Background="{TemplateBinding Background}" BorderThickness="1" Padding="5">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="#1C7168" />
+                <Setter Property="Cursor" Value="Hand"/>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+    
+    <Style TargetType="PasswordBox">
+        <Setter Property="FontFamily" Value="Arial"/>
+        <Setter Property="Background" Value="#3C4147"/>
+        <Setter Property="BorderThickness" Value="0,0,0,2"/>
+        <Setter Property="Foreground" Value="#EDF6FD"/>
+        <Setter Property="HorizontalAlignment" Value="Left"/>
+        <Setter Property="FontWeight" Value="Bold"/>
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="Height" Value="25"/>
+        <Setter Property="BorderBrush" Value="#262E31"/>
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="BorderBrush">
+                    <Setter.Value>
+                        <SolidColorBrush Color="#FF898989" />
+                    </Setter.Value>
+                </Setter>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+    
+    
+    <Style x:Key="placeHolder1" TargetType="{x:Type TextBox}" BasedOn="{StaticResource {x:Type TextBox}}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type TextBox}">
+                    <Grid>
+                        <TextBox Text="{Binding Path=Text,
+                                                RelativeSource={RelativeSource TemplatedParent}, 
+                                                Mode=TwoWay,
+                                                UpdateSourceTrigger=PropertyChanged}"
+                                 x:Name="textSource" 
+                                 Background="Transparent" Foreground="White"
+                                 BorderThickness="0" Padding="0,5,0,0"  CaretBrush="White"  BorderBrush="#262E31" FontFamily="Arial" FontWeight="Bold" FontSize="14"
+                                 Panel.ZIndex="2" />
+                        <TextBox Text="{TemplateBinding Tag}" Background="#3C4147"  CaretBrush="White" FontWeight="Bold" FontSize="14" BorderBrush="#262E31" BorderThickness="0" FontFamily="Arial"  Panel.ZIndex="1">
+                            <TextBox.Style>
+                                <Style TargetType="{x:Type TextBox}">
+                                    <Setter Property="Foreground" Value="Transparent"/>
+                                    <Style.Triggers>
+
+                                        <DataTrigger Binding="{Binding Path=Text, Source={x:Reference textSource}}" Value="">
+                                            <Setter Property="Foreground" Value="Gray"/>
+                                            <Setter Property="HorizontalContentAlignment" Value="Left"/>
+                                            <Setter Property="VerticalContentAlignment" Value="Center"/>
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </TextBox.Style>
+                        </TextBox>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="placeHolder" TargetType="{x:Type TextBox}" BasedOn="{StaticResource {x:Type TextBox}}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type TextBox}">
+                    <Grid>
+                        <TextBox Text="{Binding Path=Text,
+                                                RelativeSource={RelativeSource TemplatedParent}, 
+                                                Mode=TwoWay,
+                                                UpdateSourceTrigger=PropertyChanged}"
+                                 x:Name="textSource" 
+                                 Background="Transparent" Foreground="White"
+                                 BorderThickness="0,0,0,2" Opacity="0.4" Padding="0,2,0,0"  CaretBrush="White"  BorderBrush="#262E31" FontFamily="Arial" FontWeight="Bold" FontSize="14"
+                                 Panel.ZIndex="2" />
+                        <TextBox Text="{TemplateBinding Tag}" Background="#3C4147" CaretBrush="White" Opacity="0.4" FontWeight="Bold" FontSize="14" BorderBrush="#262E31" BorderThickness="0,0,0,2" FontFamily="Arial"  Panel.ZIndex="1">
+                            <TextBox.Style>
+                                <Style TargetType="{x:Type TextBox}">
+                                    <Setter Property="Foreground" Value="Transparent"/>
+                                    <Style.Triggers>
+                                   
+                                        <DataTrigger Binding="{Binding Path=Text, Source={x:Reference textSource}}" Value="">
+                                            <Setter Property="Foreground" Value="Gray"/>
+                                            <Setter Property="HorizontalContentAlignment" Value="Left"/>
+                                            <Setter Property="VerticalContentAlignment" Value="Center"/>
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </TextBox.Style>
+                        </TextBox>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    
+</ResourceDictionary>

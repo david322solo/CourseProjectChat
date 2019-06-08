@@ -1,0 +1,41 @@
+﻿<Page x:Class="ChatClient.Menu"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ChatClient"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="270"
+      Title="Menu" Background="#242a30">
+    <Page.Resources>
+        <Style x:Key="buttonMenu" TargetType="Button">
+            <Setter Property="Width" Value="270"/>
+            <Setter Property="Height" Value="40"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Background" Value="#242a30"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="Foreground" Value="white"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Padding" Value="60,0,0,0"/>
+            <Setter Property="HorizontalContentAlignment" Value="Left"/>
+
+        </Style>
+    </Page.Resources>
+        <Grid>
+        <StackPanel>
+            <Canvas VerticalAlignment="Top" Height="129" Background="#009687" Margin="0,0,0.4,0">
+                <Label x:Name="NameSurname" Content="NameSurname" Canvas.Left="26" Canvas.Top="65" FontWeight="Bold" Foreground="White"/>
+                <Label x:Name="Phone" Content="Phone" Canvas.Left="26" Canvas.Top="90" FontWeight="Bold" Foreground="White"/>
+                <Ellipse x:Name="elipse" Fill="#a796e8" Height="46" Canvas.Left="26"  Canvas.Top="14" Width="48"/>
+                <Label x:Name="tSubname" Content="NS" Canvas.Left="35" Canvas.Top="24" FontWeight="Bold" Foreground="White"/>
+                <!--<Image Source="/Resources/users.png" Height="30" Width="30" Canvas.Top="143" Canvas.Left="10" Panel.ZIndex="1"/>-->
+                <Button Content="Контакты" Style="{DynamicResource buttonMenu}" Canvas.Top="135" Click="Button_Click"/>
+                <Button Content="Настройки" Style="{DynamicResource buttonMenu}"  Canvas.Top="185" Click="Button_Click_1"/>
+
+            </Canvas>
+
+            <!--<ListBox x:Name="ListContacts"  Margin="0,256,0.4,-0.4"/>-->
+        </StackPanel>
+    </Grid>
+</Page>

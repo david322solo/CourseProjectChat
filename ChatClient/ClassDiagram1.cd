@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ChatClient.App" Collapsed="true">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChatClient.HashPassword">
+    <Position X="4.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\HashPassword.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChatClient.Authorization" BaseTypeListCollapsed="true">
+    <Position X="4.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAEAAAAAEAAAQAAAAAAAAABACAAAA=</HashCode>
+      <FileName>View\Authorization.xaml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="client" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ChatClient.ChangeInfo" BaseTypeListCollapsed="true">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAEAAAQAAIAAAAAABICAAAA=</HashCode>
+      <FileName>View\ChangeInfo.xaml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_user" />
+      <Field Name="client" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ChatClient.ChatFrame" BaseTypeListCollapsed="true">
+    <Position X="9.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAABAAAAAAAAAAAAAAQAAAAAAAAABAABCAA=</HashCode>
+      <FileName>View\ChatFrame.xaml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_LoginFirst" />
+      <Field Name="client" />
+      <Field Name="_LoginSecond" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ChatClient.Contacts" BaseTypeListCollapsed="true">
+    <Position X="11.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQACAAAAAAAAAAAAAAAAAQAAIAAAAAABIAAAAA=</HashCode>
+      <FileName>View\Contacts.xaml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_user" />
+      <Field Name="client" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ChatClient.LeftMenu" BaseTypeListCollapsed="true">
+    <Position X="8.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAACAAAAAgAAQAAAAAAAAAAQAAAAAAAAABABAAQA=</HashCode>
+      <FileName>View\LeftMenu.xaml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="client" />
+      <Field Name="GLeftMenu" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ChatClient.Menu" BaseTypeListCollapsed="true">
+    <Position X="16.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACABAAAAAAAAAAEAAAQAAAAAAAAABAAAAQA=</HashCode>
+      <FileName>View\Menu.xaml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="client" />
+      <Field Name="user" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ChatClient.Messager" BaseTypeListCollapsed="true">
+    <Position X="4" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAEAIAAAAAAAAAAEAAQAAIAAAAAABAgAAAA=</HashCode>
+      <FileName>View\Messager.xaml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_user" />
+      <Field Name="client" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ChatClient.Registration" BaseTypeListCollapsed="true">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAABAAAAABAAAAEAAAQAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>View\Registration.xaml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="client" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ChatClient.ServiceChat.ServiceChatClient" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAQEAAEAAIAgAAAAICgAFIBIAQwACEAAEAAAAQBEBAA=</HashCode>
+      <FileName>Connected Services\ServiceChat\Reference.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ChatClient.Properties.Resources">
+    <Position X="6.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChatClient.Properties.Settings">
+    <Position X="2.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="wcf_chat.Users" Collapsed="true">
+    <Position X="14.5" Y="1" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.String" Collapsed="true">
+    <Position X="13.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Interface Name="ChatClient.ServiceChat.IServiceChat">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAQEAAEAAIAgAAAAICgAFIBIAQwACEAAEAAAAQBEBAA=</HashCode>
+      <FileName>Connected Services\ServiceChat\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ChatClient.ServiceChat.IServiceChatCallback">
+    <Position X="2.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Connected Services\ServiceChat\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ChatClient.ServiceChat.IServiceChatChannel">
+    <Position X="2.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Connected Services\ServiceChat\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

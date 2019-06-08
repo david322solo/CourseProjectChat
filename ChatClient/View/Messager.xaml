@@ -1,0 +1,20 @@
+﻿<Window x:Class="ChatClient.Messager" x:Name="wind"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ChatClient"
+        mc:Ignorable="d"
+        Title="ICQMessenger" Height="480" Width="800" MinHeight="350" MinWidth="500" Closing="Wind_Closing" >
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="270"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Canvas x:Name="Canvas"  Width="1920" Height="1080" HorizontalAlignment="Right" Background="Black" Opacity="0.6" Visibility="Hidden" Canvas.ZIndex="1" Grid.ColumnSpan="2" Margin="0,0,-0.4,0.4" />
+        <Frame x:Name="Menu" Grid.Column="0" NavigationUIVisibility="Hidden" />
+        <Frame x:Name="ChatMessage" Background="#242a30" Grid.Column="1" NavigationUIVisibility="Hidden"/>
+
+    </Grid>
+
+</Window>
